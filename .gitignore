@@ -2,11 +2,11 @@
 length, width, and the height of the pyramid.'''
 
 import math
-l = float(input("Please insert the length of the pyramid base as a number \n")) #Insert the length of the pyramid base.
-w = float(input("Please insert the width of the pyramid base as a number \n")) #Insert the width of the pyramid base.
-h = float(input("Please insert the height of the pyramid as a number \n")) #Insert the height of the pyramid.
+l = float(input("Please insert the length of the pyramid base as a number:\n")) #Insert the length of the pyramid base.
+w = float(input("Please insert the width of the pyramid base as a number:\n")) #Insert the width of the pyramid base.
+h = float(input("Please insert the height of the pyramid as a number:\n")) #Insert the height of the pyramid.
 Area = (l*w)+(l*math.sqrt((w**2)/(4)+(h**2)))+(w*math.sqrt((l**2)/(4)+(h**2))) #The rule of finding the Area of the Right Rectangular pyramid.
 if (Area < 0): #If Area is less than 0 then...
   print("The area of the following values can not be calculated because the area can't be negative.") #Print this statement if Area is less than 0.
 else: #If Area is bigger than 0 then...
- print("The area of the right rectangular pyramid is approximately \n", Area) #Print the area of the right rectangular pyramid.
+ print("The area of the right rectangular pyramid is approximately: \n", Area) #Print the area of the right rectangular pyramid.
